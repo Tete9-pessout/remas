@@ -1,0 +1,32 @@
+name: flutter_application_1
+description: "A new Flutter project."
+publish_to: 'none'  # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"  # تحديد الإصدار المناسب من SDK
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.4.0  # تحديث حزمة audioplayers إلى النسخة الأحدث
+  cupertino_icons: ^1.0.8  # تأكد من أن النسخة متوافقة مع أحدث إصدارات Flutter
+  url_launcher: ^6.0.10  # إضافة حزمة url_launcher لفتح الروابط
+  video_player: ^2.8.2  # تحديث حزمة الفيديو إلى النسخة الأحدث
+  share_plus: ^10.1.4  # تحديث حزمة share_plus إلى النسخة الأحدث
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # تحديث حزمة flutter_lints إلى النسخة الأحدث
+
+flutter:
+  uses-material-design: true
+
+  # إضافة الأصول (الملفات الصوتية والصورة) التي ستستخدمها
+  assets:
+    - assets/sounds/correct_answer.mp3
+    - assets/sounds/incorrect_answer.mp3
+    - Images/8.jpg
+    - assets/s.mp4  # إضافة الفيديو إلى الأصول
